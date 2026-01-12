@@ -2,7 +2,7 @@ import openpyxl
 import os
 
 # 1️⃣ Excel-Dateien laden
-quelle = openpyxl.load_workbook('../Downloads/Pluxee Excel.xlsx')  # Datei, von der kopiert wird
+quelle = openpyxl.load_workbook('Downloads/Pluxee Excel.xlsx')  # Datei, von der kopiert wird
 ziel = openpyxl.load_workbook('Pluxee_Essenszuschuss_final.xlsx')      # Datei, in die eingefügt wird
 
 # 2️⃣ Arbeitsblätter auswählen
@@ -29,4 +29,5 @@ for x in range(25):
     start_zeile_ziel += 1
 
 os.system("start ziel.xlsx")
+
 
