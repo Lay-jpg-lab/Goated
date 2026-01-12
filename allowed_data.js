@@ -4,7 +4,7 @@ function isValidName(name) {
 }
 
 function validatedName() {
-    const nameInput = document.getElementById('name');
+    const nameInput = document.getElementById('name-error');
     const errorMessage = document.getElementById('name-error');
 
     const name = nameInput.value.trim();
@@ -169,4 +169,5 @@ document.getElementById('phone').addEventListener('keydown', function(event) {
         this.value = this.value.replace(/\s+$/, '');
     }
 });
+
 
