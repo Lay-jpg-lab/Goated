@@ -9,7 +9,6 @@ ziel = openpyxl.load_workbook('Pluxee_Essenszuschuss_final.xlsx')      # Datei, 
 ws_quelle = quelle.active
 ws_ziel = ziel.active
 
-# 3️⃣ Bereich definieren
 start_zeile_quelle = 4
 start_zeile_ziel = 9
 for x in range(25):
@@ -30,3 +29,4 @@ for x in range(25):
     start_zeile_ziel += 1
 
 os.system("start ziel.xlsx")
+
