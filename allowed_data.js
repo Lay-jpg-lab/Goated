@@ -1,6 +1,6 @@
-function isValidName(name) {
+function isValidName(user_name) {
     const nameRegex = /^[A-Za-zÄÖÜäöüß]+(?:-[A-Za-zÄÖÜäöüß]+)*(?:\s+[A-Za-zÄÖÜäöüß]+(?:-[A-Za-zÄÖÜäöüß]+)*)+$/;
-    return nameRegex.test(name);
+    return nameRegex.test(user_name);
 }
 
 function validateName() {
@@ -169,3 +169,4 @@ document.getElementById('phone').addEventListener('keydown', function(event) {
         this.value = this.value.replace(/\s+$/, '');
     }
 });
+
