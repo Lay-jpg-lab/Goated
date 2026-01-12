@@ -3,7 +3,7 @@ function isValidName(name) {
     return nameRegex.test(name);
 }
 
-function validateName() {
+function validatedName() {
     const nameInput = document.getElementById('name');
     const errorMessage = document.getElementById('name-error');
 
@@ -169,3 +169,4 @@ document.getElementById('phone').addEventListener('keydown', function(event) {
         this.value = this.value.replace(/\s+$/, '');
     }
 });
+
